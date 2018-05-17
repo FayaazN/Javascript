@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
+    <style>
+        html {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        body{
+            font-family: 'Copse', serif;
+            text-align: center;
+        }
+        img {
+            height: 300px;
+            width: 300px;
+            border: 0px;
+        }
+        #pics {
+            width: 900px;
+            height: 900px;
+            border: solid 1px black;
+            font-size: 0px;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+<h1> LogoShuffle</h1>
+<div id="pics">
+    <img src ="img/logo1.jpg">
+    <img src ="img/logo2.jpg">
+    <img src ="img/logo3.jpg">
+    <img src ='img/logo4.jpg'>
+    <img src ='img/logo5.jpg'>
+    <img src ='img/logo6.jpg'>
+    <img src ='img/logo7.jpg'>
+    <img src ='img/logo8.jpg'>
+    <img src ='img/logo9.jpg'>
+</div>
+<script>
+    var plaatjes = document.getElementsByTagName('img');
+    var random = 0;
+    for(var i = 0; i < plaatjes.length; i++) {
+        random = ((Math.floor(Math.random() * 9) + 1));
+        plaatjes[i].src = 'img/logo' + random +".jpg";
+    }
+</script>
+
+</body>
+</html>
+<body>
+
+</body>
+</html>
